@@ -4,7 +4,7 @@ import os
 import getpass
 from optparse import OptionParser
 #
-# comando:  python modules_checker.py /opt/openerp/v10/extra_addons,/opt/openerp/v10/10cq/addons,/opt/openerp/v10/10cq/odoo/addons/ -D test10zero1 -U openerp -H localhost
+# comando:  python modules_checker.py /opt/openerp/v10/extra_addons,/opt/openerp/v10/10/addons,/opt/openerp/v10/10/odoo/addons/ -D test10zero -U openerp -H localhost
 # i parametri sono:
 #   la/le cartelle di addons con path completo separate da virgole senza spazi
 #   -D database da controllare
@@ -14,13 +14,13 @@ from optparse import OptionParser
 #   crea il file testcmdpull con le pull di tutti i moduli installati nel database e presenti in locale
 #
 parser = OptionParser()
-parser.add_option("-D", "--database", dest="database",metavar="hydronit2018",
+parser.add_option("-D", "--database", dest="database",metavar="DBNAME",
                   help="Choose Postgres database name")
-parser.add_option("-U", "--user", dest="user",metavar="hydronit",
+parser.add_option("-U", "--user", dest="user",metavar="DBUSER",
                   help="Choose Postgres database user")
-parser.add_option("-H", "--host", dest="hostname",metavar="cq-server-ubuntu",
+parser.add_option("-H", "--host", dest="hostname",metavar="",
                   help="Choose Postgres database hostname")
-parser.add_option("-B", "--branch", dest="branches",metavar="master",
+parser.add_option("-B", "--branch", dest="branches",metavar="DBHOST",
                   help="All branches (all) or Master only (master)")
 
 optlist, args = parser.parse_args()
