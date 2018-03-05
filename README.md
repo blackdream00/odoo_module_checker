@@ -1,4 +1,4 @@
-this module is a designed for Odoo in order to check the modules, creates a testcmdpull file with the pulls of all the modules installed in a odoo database and present locally in the addons folders.
+this code is a designed for Odoo in order to check the modules, creates a testcmdpull file with the pulls of all the modules installed in a odoo database and present locally in the addons folders.
 It also writes a list of possible modules installed in the database but not present locally.
 
 The command to use is:
